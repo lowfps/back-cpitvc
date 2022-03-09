@@ -11,8 +11,9 @@ class IngenieroRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', cpitvc_ingeniero_1.default.getIngenieros);
+        // this.router.get('/', ingenieroController.getIngenieros);
         this.router.get('/:idIngeniero', cpitvc_ingeniero_1.default.getIngenieroId);
+        this.router.get('/certif', cpitvc_ingeniero_1.default.generateCertif);
         // this.router.post('/create', rolController.createRol);
         // this.router.delete('/:codRol', rolController.deleteRol);
         // this.router.put('/update/:codRol', rolController.updateRol);
